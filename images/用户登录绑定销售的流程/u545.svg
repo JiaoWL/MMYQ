@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="60px" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="260px" height="60px" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="568" y1="1276" x2="568" y2="1336" id="LinearGradient431">
-      <stop id="Stop432" stop-color="#ffffff" offset="0" />
-      <stop id="Stop433" stop-color="#f2f2f2" offset="0" />
-      <stop id="Stop434" stop-color="#e4e4e4" offset="1" />
-      <stop id="Stop435" stop-color="#ffffff" offset="1" />
-    </linearGradient>
+    <filter x="690px" y="718px" width="260px" height="60px" filterUnits="userSpaceOnUse" id="filter999">
+      <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetInner" />
+      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetInner" result="shadowGaussian" />
+      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.349019607843137 0  " in="shadowComposite" />
+    </filter>
+    <g id="widget1000">
+      <path d="M 695 733  A 10 10 0 0 1 705 723 L 935 723  A 10 10 0 0 1 945 733 L 945 763  A 10 10 0 0 1 935 773 L 705 773  A 10 10 0 0 1 695 763 L 695 733  Z " fill-rule="nonzero" fill="#000000" stroke="none" fill-opacity="0.8" />
+    </g>
   </defs>
-  <g transform="matrix(1 0 0 1 -518 -1276 )">
-    <path d="M 568 1276  C 596 1276  618 1289.2  618 1306  C 618 1322.8  596 1336  568 1336  C 540 1336  518 1322.8  518 1306  C 518 1289.2  540 1276  568 1276  Z " fill-rule="nonzero" fill="url(#LinearGradient431)" stroke="none" />
-    <path d="M 568 1276.5  C 595.72 1276.5  617.5 1289.48  617.5 1306  C 617.5 1322.52  595.72 1335.5  568 1335.5  C 540.28 1335.5  518.5 1322.52  518.5 1306  C 518.5 1289.48  540.28 1276.5  568 1276.5  Z " stroke-width="1" stroke="#797979" fill="none" />
+  <g transform="matrix(1 0 0 1 -690 -718 )">
+    <use xlink:href="#widget1000" filter="url(#filter999)" />
+    <use xlink:href="#widget1000" />
   </g>
 </svg>
